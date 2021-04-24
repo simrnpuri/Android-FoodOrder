@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FoodOrder</string>
+    <string name="tab_text_1">MENU</string>
+    <string name="tab_text_2">CART</string>
+    <string name="tab_text_3">ORDERS</string>
+    <string name="food_price">price</string>
+    <string name="food_name">title</string>
+    <string name="food_description">shortdesc</string>
+    <string name="Pizza">Pizza</string>
+
+</resources>

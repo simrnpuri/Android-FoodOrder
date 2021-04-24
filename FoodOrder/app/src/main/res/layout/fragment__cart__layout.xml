@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Cart_Layout">
+
+    <TextView
+        android:id="@+id/Empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Your Cart is Empty"
+        android:textColor="#D81111"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/listViewCart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:text="Items' Total" />
+
+    <TextView
+        android:id="@+id/textViewGrandTotalNumber"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textViewTaxNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toEndOf="@+id/textViewGrandTotal"
+        android:layout_toRightOf="@+id/textViewGrandTotal"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <TextView
+        android:id="@+id/textViewTaxNumber"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textViewTotalNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_toEndOf="@+id/textViewTax"
+        android:layout_toRightOf="@+id/textViewTax"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="310dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewTotalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/listViewCart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_toEndOf="@+id/textViewTotal"
+        android:layout_toRightOf="@+id/textViewTotal"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewTax"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textViewTotal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tax" />
+
+    <TextView
+        android:id="@+id/textViewGrandTotal"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textViewTax"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Grand Total" />
+
+    <Button
+        android:id="@+id/buttonPlaceOrder"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:text="Place Order" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@+id/buttonPlaceOrder"
+        android:layout_below="@+id/textViewGrandTotal"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress" />
+
+</RelativeLayout>
+</FrameLayout>
